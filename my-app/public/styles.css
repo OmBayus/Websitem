@@ -1,0 +1,538 @@
+/*main*/
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Playfair Display', serif;
+}
+
+/*navbar*/
+
+#Navbar{
+
+  padding: 1.8rem 2rem 1.5rem 1.5rem;
+
+
+}
+
+.Navbar-ul{
+      list-style: none;
+      margin: 0;
+}
+
+.Navbar-ul li{
+      display: inline-block;
+}
+
+.navbar-icon{
+  position: relative;
+  bottom: 0.8rem;
+  margin-right: 0.8rem;
+
+}
+
+.navbar-main{
+      color: white;
+      font-size: 2rem;
+      font-family: 'Playfair Display', serif;
+}
+
+.navbar-main:hover{
+      color: white;
+      text-decoration: none;
+      opacity: 0.8;
+}
+
+#navbar-items{
+  margin: 0.5rem 4rem 0 0;
+
+}
+
+.navbar-item{
+  color: white;
+  font-size: 1.2rem;
+  padding: 0 2rem 0 2rem;
+}
+
+.navbar-item:hover{
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/*Responsive Navbar*/
+
+.check-icon{
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 4.5rem;
+  color: white;
+  opacity: 0.9;
+}
+
+.check-icon:hover{
+  opacity: 0.7;
+}
+
+#check-navbar-responsive{
+  display: none;
+}
+
+#navbar-responsive{
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: white;
+  width: 30%;
+  height: 100%;
+  font-size: 1.6rem;
+  padding: 0;
+  z-index: 4;
+
+}
+
+@media (max-width:992px)
+{
+  .check-icon{
+    display: block;
+  }
+
+  #navbar-items{
+    display: none;
+  }
+}
+
+#navbar-responsive ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar-responsive ul li a{
+  color: black;
+  width: 100%;
+  display: block;
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+}
+
+#navbar-responsive ul li a:hover{
+  text-decoration: none;
+  background-color: #F5F5F5;
+}
+
+#navbar-main-responsive{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  opacity: 0.05;
+  z-index: 3;
+}
+
+
+/* React-Logo */
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+      .react-logo {
+        animation: react-logo-spin infinite 20s linear;
+      }
+    }
+
+
+    @keyframes react-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+
+
+
+/*Anasayfa*/
+
+.Anasayfa{
+  background-image: url("Anasayfa.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65rem;
+  margin-bottom: 0;
+  border-radius: 0;
+  position: relative;
+}
+
+.hello{
+  padding: 10rem 0;
+  color:white;
+}
+
+.hello-topic{
+  font-size: 2.5rem;
+}
+
+.hello-hr{
+  border-color: white;
+  border-width: 3px;
+  width: 25%;
+}
+
+.hello-info{
+  margin-top: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.learn-more{
+  margin: 0 auto 0 auto;
+  width: 500px;
+}
+
+#hello-btn{
+  border-radius: 5rem;
+  padding: 0.6rem 3rem 0.6rem 3rem;
+  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+  border: none;
+}
+
+#hello-btn:hover{
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+@media (max-width:1000px)
+{
+  .Anasayfa{
+    height: 140rem;
+  }
+  .hello{
+    padding: 20rem 0;
+  }
+  .hello-topic{
+    font-size: 4rem;
+    font-weight: 500;
+  }
+  .hello-info{
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  #hello-btn{
+    padding: 0.8rem 6rem 0.8rem 6rem;
+    font-size: 3rem;
+  }
+  #hello-btn:hover{
+    border: 5px solid white;
+  }
+
+  .learn-more{
+    margin-top: 7rem;
+  }
+}
+
+
+/*Roket-animation*/
+
+.roket1{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top:120px;
+}
+
+.roket2{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top:180px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .roket2 {
+    animation: roket2-go infinite 40s ease-in;
+  }
+}
+
+
+@keyframes roket2-go {
+  from {
+    left:-500px;
+    opacity: 10;
+  }
+  to {
+    left:97%;
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .roket1 {
+    animation: roket1-go infinite 35s ease-in;
+  }
+}
+
+
+@keyframes roket1-go {
+  from {
+    left:-200px;
+    opacity: 10;
+  }
+  to {
+    left:97%;
+    opacity: 0;
+  }
+}
+
+
+
+/*Hakkımda*/
+
+#Hakkımda{
+  background-image: url("bedge-grunge.png");
+}
+
+#profil{
+  margin-top: 3rem;
+}
+
+.colonlar{
+  margin: 1rem 0;
+}
+
+.profile-hr{
+  width: 60%;
+  border-width: 3px;
+}
+
+.skiller{
+  width: 80%;
+  margin: 2rem 0 5rem 0;
+}
+
+.skills-topic{
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 1.7rem;
+}
+
+#figma-icon{
+  width: 200px;
+}
+
+
+/*Card*/
+
+
+.Card-img{
+  width: 250px;
+  height: 250px;
+}
+
+.Full-Card{
+  padding: 20px;
+  margin-top: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.065);
+  cursor: pointer;
+  transition: all 2s;
+}
+
+.Full-Card:hover{
+
+  box-shadow: 2px 2px 2px 2px black;
+
+}
+
+.Card-link{
+  text-decoration: none;
+  color: black;
+}
+
+.Card-link:hover{
+  text-decoration: none;
+  color: black;
+}
+
+.card-icon{
+  margin-right: 3px;
+  margin-bottom: 5px;
+  color: rgba(234, 0, 255, 0.652);
+}
+
+
+/*Blog*/
+
+.blog{
+  background-image: url("brick-wall.png");
+}
+
+.last-post{
+  background-color: transparent;
+}
+
+.post-content{
+  margin: 2rem 8rem;
+  font-size: large;
+}
+
+.youtube-link{
+  width: 1120px;
+  height: 630px;
+}
+
+.learn-more-link:hover a{
+  text-decoration: none;
+  color:white;
+}
+
+
+@media screen and (max-width:1200px) {
+  .youtube-link {
+    margin-left: 50px;
+    width: 840px;
+    height: 472px;
+  }
+}
+
+
+@media screen and (max-width:990px) {
+  .youtube-link {
+    margin-left: 60px;
+    width: 560px;
+    height: 315px;
+  }
+}
+
+
+
+
+.ca3-scroll-down-arrow {
+	background-image: url("down-arrow-16-460295.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ca3-scroll-down-link {
+  cursor:pointer;
+	height: 60px;
+	width: 80px;
+	margin: 0px 0 0 -40px;
+	line-height: 60px;
+	position: absolute;
+	left: 50%;
+	color: #FFF;
+	text-align: center;
+	font-size: 70px;
+	z-index: 100;
+	text-decoration: none;
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+
+	-webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+	-moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+	animation:         ca3_fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes ca3_fade_move_down {
+  0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -webkit-transform:translate(0,20px); opacity: 0; }
+}
+@-moz-keyframes ca3_fade_move_down {
+  0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { -moz-transform:translate(0,20px); opacity: 0; }
+}
+@keyframes ca3_fade_move_down {
+  0%   { transform:translate(0,-20px); opacity: 0;  }
+  50%  { opacity: 1;  }
+  100% { transform:translate(0,20px); opacity: 0; }
+}
+
+
+.page-header-image{
+  background-image: url("Anasayfa.jpg");
+}
+
+
+/*Login*/
+
+
+
+
+
+
+/*Footer*/
+
+footer{
+      text-align: center;
+      background-color: #20232a;
+      padding: 1.5rem 0;
+      color: #818a91; 
+}
+
+footer a{
+      color: white;
+}
+
+
+
+.copyright{
+      margin-top: 0.5rem;
+}
+
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons a.instagram:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.github:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
